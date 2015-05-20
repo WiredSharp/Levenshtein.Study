@@ -1,0 +1,19 @@
+﻿<Window x:Class="Levenshtein.Gui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox Name="tbInput" Text="input request here" TextChanged="TbInputTextChangedEventHandler" Grid.Column="0" Grid.Row="0"/>
+        <ListView Name="lvStat" Grid.Column="1" Grid.Row="0"></ListView>
+        <ListView Name="lvData" Grid.Column="0" Grid.Row="1"></ListView>
+        <ListView Name="lvResult" Grid.Column="1" Grid.Row="1"></ListView>
+    </Grid>
+</Window>
